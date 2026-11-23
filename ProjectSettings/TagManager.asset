@@ -6,6 +6,7 @@ TagManager:
   tags:
   - spike
   - Spikes
+  - banana collect
   layers:
   - Default
   - TransparentFX
