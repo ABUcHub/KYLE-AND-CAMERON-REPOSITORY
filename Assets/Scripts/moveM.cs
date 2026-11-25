@@ -2,38 +2,38 @@ using UnityEngine;
 
 public class MonkeyMovement : MonoBehaviour
 {
-    public float speed = 5f;
-    public float jumpForce = 10f;
+    //variable initialisation.
+    private Rigidbody2D rigiB;
+    private float moveS;
+    private Vector2 movementM;
+    public float movementSpeed = 3.5f;
+    public float jumpHeight = 7.5f;
 
-    private Rigidbody2D rb;
-
+    //manages the banana counting with the monkey collecting them
     public BananaManager bm;
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rigiB = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        // Move left and right
-        float move = Input.GetAxisRaw("Horizontal");
+        // moving & jumping 
+        moveS = Input.GetAxisRaw("Horizontal");
 
-        rb.linearVelocity = new Vector2(
-            move * speed,
-            rb.linearVelocity.y
-        );
-
-        // Jump
-        if (Input.GetButtonDown("Jump"))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
-            rb.linearVelocity = new Vector2(
-                rb.linearVelocity.x,
-                jumpForce
-            );
+            rigiB.linearVelocity = new Vector2(rigiB.linearVelocity.x, jumpHeight);
         }
     }
+    // monkey movement for our silly monkey 
+    private void FixedUpdate()
+    {
+        movementM = new Vector2(moveS * movementSpeed, rigiB.linearVelocity.y);
+        rigiB.linearVelocity = movementM;
+    }
 
-
+    //banana collection.
      void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("banana collect"))

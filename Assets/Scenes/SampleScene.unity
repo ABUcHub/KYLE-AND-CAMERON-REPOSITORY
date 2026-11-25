@@ -1559,8 +1559,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b2c240b147883a4a9363ee2f40fa27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  speed: 5
-  jumpForce: 10
+  speed: 3.5
+  jumpForce: 7.5
   bm: {fileID: 1809046953}
 --- !u!50 &607067306
 Rigidbody2D:
@@ -4430,7 +4430,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 035440758a14b2d4c8018cfe2f08ec2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  bananas: 0
 --- !u!4 &1809046952
 Transform:
   m_ObjectHideFlags: 0
@@ -5507,11 +5506,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7065275271653204191, guid: db8516b3b9c4f684a9b50af98ec8d001, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.28
+      value: 9.64
       objectReference: {fileID: 0}
     - target: {fileID: 7065275271653204191, guid: db8516b3b9c4f684a9b50af98ec8d001, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.12
+      value: -2.63
       objectReference: {fileID: 0}
     - target: {fileID: 7065275271653204191, guid: db8516b3b9c4f684a9b50af98ec8d001, type: 3}
       propertyPath: m_LocalPosition.z
