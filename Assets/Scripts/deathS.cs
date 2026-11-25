@@ -3,20 +3,16 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
-    private bool isDead = false;
+    //monkey alive, monkey dead.
+    private bool lifeStatus = false;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Touched: " + other.name);
-
-        if (other.CompareTag("spike") && !isDead)
+        //if the monkey hits the spike he is now dead. R.I.P.
+        if (other.CompareTag("spike") && !lifeStatus)
         {
-            isDead = true;
-
-            Debug.Log("MONKEY DIED!");
-
-            MonkeyMovement movement =
-                GetComponent<MonkeyMovement>();
+            lifeStatus = true;
+            MonkeyMovement movement = GetComponent<MonkeyMovement>();
 
             if (movement != null)
             {
@@ -29,8 +25,6 @@ public class PlayerDeath : MonoBehaviour
 
     private void RestartLevel()
     {
-        SceneManager.LoadScene(
-            SceneManager.GetActiveScene().buildIndex
-        );
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
