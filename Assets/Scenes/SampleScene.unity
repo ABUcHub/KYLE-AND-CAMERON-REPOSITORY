@@ -872,7 +872,7 @@ GameObject:
   - component: {fileID: 404409513}
   m_Layer: 0
   m_Name: removed spike_0 (2)
-  m_TagString: spike
+  m_TagString: danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1272,7 +1272,7 @@ GameObject:
   - component: {fileID: 519236831}
   m_Layer: 0
   m_Name: Snake_0 (1)
-  m_TagString: spike
+  m_TagString: danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3746,6 +3746,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9061196915151907494, guid: db8516b3b9c4f684a9b50af98ec8d001, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3903,7 +3907,7 @@ GameObject:
   - component: {fileID: 1442790166}
   m_Layer: 0
   m_Name: removed spike_0 (1)
-  m_TagString: spike
+  m_TagString: danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4647,7 +4651,7 @@ GameObject:
   - component: {fileID: 1728616584}
   m_Layer: 0
   m_Name: removed spike_0 (1)
-  m_TagString: spike
+  m_TagString: danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5764,7 +5768,7 @@ GameObject:
   - component: {fileID: 2035494141}
   m_Layer: 0
   m_Name: removed spike_0 (3)
-  m_TagString: spike
+  m_TagString: danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5996,7 +6000,7 @@ GameObject:
   - component: {fileID: 2078880395}
   m_Layer: 0
   m_Name: Snake_0
-  m_TagString: spike
+  m_TagString: danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
