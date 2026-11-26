@@ -1,5 +1,7 @@
 using UnityEngine;
 
+
+
 public class MonkeyMovement : MonoBehaviour
 {
     //variable initialisation.
@@ -8,6 +10,8 @@ public class MonkeyMovement : MonoBehaviour
     private Vector2 movementM;
     public float movementSpeed = 3.5f;
     public float jumpHeight = 7.5f;
+
+    public GameObject WinObj;
 
     //manages the banana counting with the monkey collecting them
     public BananaManager bm;
@@ -40,6 +44,12 @@ public class MonkeyMovement : MonoBehaviour
         {
             Destroy(other.gameObject);
             bm.bananaCount++;
+        }
+
+        if (other.gameObject.CompareTag("winObject"))
+        {
+            Debug.Log("Win object collected");
+            WinObj.SetActive(true);
         }
     }
 }

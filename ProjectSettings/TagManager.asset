@@ -8,6 +8,7 @@ TagManager:
   - Spikes
   - banana collect
   - danger
+  - winObject
   layers:
   - Default
   - TransparentFX
